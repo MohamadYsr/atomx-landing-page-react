@@ -1,0 +1,130 @@
+p {
+    font-size: 19px;
+    font-weight: 700;
+    color: rgb(60, 58, 58);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 34px;
+    font-weight: 700;
+    color: #bd5050;
+}
+
+.subText {
+    font-size: 22px;
+    color: darkgrey;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.imageContainer {
+    width: 40%;
+    height: 100%;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: auto;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 260px;
+    border: 1px solid #EBEBEB;
+    border-radius: 25px;
+    padding: 35px 30px;
+    margin: 24px 0 24px 24px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.iconContainer {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(197, 154, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    color: wheat;
+    background-color: #bd5050;
+}
+
+.card:hover .iconContainer {
+    background-color: white;
+}
+
+.card:hover p{
+    color: white;
+}
+
+.icon {
+    max-width: 33px;
+    max-height: 33px;
+}
+
+@media only screen and (max-width: 768px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        top: 0;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+
+    .cardsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    }
+}

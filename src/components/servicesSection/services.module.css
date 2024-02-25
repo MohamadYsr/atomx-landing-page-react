@@ -1,0 +1,89 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10%;
+}
+
+.servicesContainer h2 {
+    color: rgb(78, 69, 69);
+}
+
+.servicesContainer span {
+    color: #bd5050;
+    text-decoration: underline;
+}
+
+.servicesCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    margin-top: 50px;
+}
+
+.servicesCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    margin: 20px 10px;
+    padding: 30px;
+    min-height: 250px;
+    max-height: 100%;
+    font-size: 14px;
+    background-color: #bd505008;
+}
+
+.servicesCard p {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.cardHeader {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.iconContainer {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-radius: 50%;
+    background-color: rgba(195, 148, 148, 0.144);
+}
+.cardIcon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+@media only screen and (max-width: 999px) {
+    .servicesContainer {
+        margin: 20px 5%;
+    }
+
+    .servicesCardsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    .servicesCard {
+        width: 100%;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+}
